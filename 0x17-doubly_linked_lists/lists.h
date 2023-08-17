@@ -1,5 +1,5 @@
-#ifndef _lists_h_
-#define _lists_h_
+#ifndef LISTS_H
+#define LISTS_H
 
 /* This is the header files*/
 #include <stddef.h>
@@ -19,9 +19,9 @@
  */
 typedef struct dlistint_s
 {
-    int n;
-    struct dlistint_s *prev;
-    struct dlistint_s *next;
+	int n;
+	struct dlistint_s *prev;
+	struct dlistint_s *next;
 } dlistint_t;
 
 /* The prototypes of the functions */
