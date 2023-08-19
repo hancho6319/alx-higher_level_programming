@@ -1,12 +1,23 @@
 #!/usr/bin/python3
 
-list1 = [[2, 4, 7, 1], [3, 1, 1, 0], [10, 6, 11, 15]]
-list2 = []
+a_dictionary = { 'language': "C", 'number': 13, 'track': "Low level" }
 
-list2 = list1.copy()
+list1 = list(a_dictionary.keys())
+print(len(list1))
 
-for ele in range(len(list1)):
-    list2[ele] = list(map(lambda x: x**2, list1[ele]))
+"""
+con = True
+list1 = {"python", "c++", "javascript", "JAVA", "perl"}
+list2 = {"perl", "bing", "google", "c++", "HTML", "PHP"}
 
-print(f"The list1 elements are {list1}")
-print(f"The list2 elements are {list2}")
+ls = []
+for i in list1:
+    for j in list2:
+        if i == j:
+            con = False
+    if con == True:
+        ls.append(i)
+    con = True
+
+print(ls)
+"""
