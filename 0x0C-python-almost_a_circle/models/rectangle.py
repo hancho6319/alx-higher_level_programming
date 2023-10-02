@@ -16,7 +16,7 @@ class Rectangle(Base):
             x (int): This is the x value
             y (int): This is the y value
             id (int): This is the id value
-        Raaise:
+        Raise:
         """
 
         super().__init__(id)
@@ -36,7 +36,7 @@ class Rectangle(Base):
         if not isinstance(width_value, int):
             raise TypeError("width must be an integer")
         if width_value <= 0:
-            raise ValueError("width must be grater than 0")
+            raise ValueError("width must be > 0")
         self.__width = width_value
 
     @width.getter
@@ -55,7 +55,7 @@ class Rectangle(Base):
         if not isinstance(height_value, int):
             raise TypeError("height must be an integer")
         if height_value <= 0:
-            raise ValueError("height must be greater than 0")
+            raise ValueError("height must be > 0")
         self.__height = height_value
 
     @height.getter
@@ -74,7 +74,7 @@ class Rectangle(Base):
         if not isinstance(x_value, int):
             raise TypeError("x must be an integer")
         if x_value <= 0:
-            raise ValueError("x must be greater than 0")
+            raise ValueError("x must be >= 0")
         self.__x = x_value
 
     @x.getter
@@ -93,7 +93,7 @@ class Rectangle(Base):
         if not isinstance(y_value, int):
             raise TypeError("y must be an integer")
         if y_value <= 0:
-            raise ValueError("y must be greater than 0")
+            raise ValueError("y must be >= 0")
         self.__y = y_value
 
     @y.getter
