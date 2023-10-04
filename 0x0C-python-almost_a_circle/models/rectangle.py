@@ -17,6 +17,10 @@ class Rectangle(Base):
             y (int): This is the y value
             id (int): This is the id value
         Raise:
+            TypeError: If either of width or height is not an int.
+            ValueError: If either of width or height <= 0.
+            TypeError: If either of x or y is not an int.
+            ValueError: If either of x or y < 0.
         """
 
         super().__init__(id)
@@ -100,3 +104,6 @@ class Rectangle(Base):
     def y(self):
         """ This is the method used to retrieve the value of __y"""
         return self.__y
+    
+    def area(self):
+        return self.__height * self.__width
