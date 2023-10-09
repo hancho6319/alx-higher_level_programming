@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ This is the defination of the rectangle model """
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
