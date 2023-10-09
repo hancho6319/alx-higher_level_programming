@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
 """ This is the defination of the rectangle model """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -104,11 +103,11 @@ class Rectangle(Base):
     def y(self):
         """ This is the method used to retrieve the value of __y"""
         return self.__y
-    
+
     def area(self):
         """ This is the method used to return the area of the rectangle """
         return self.height * self.width
-    
+
     def display(self):
         """ This is the method used to return the n times of # """
         [print("") for y in range(self.y)]
@@ -119,13 +118,12 @@ class Rectangle(Base):
 
     def __str__(self) -> str:
         """ This is overriding the __str__  method"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                        self.x, self.y,
-                                                        self.width, self.height)
-        
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
+
     def update(self, *args, **kwargs):
         """ Update the Rectangle.
-        
+
         Args:
         *args (ints): New attribute values.
             - 1st argument represents id attribute
@@ -168,5 +166,3 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
-
-    #def
